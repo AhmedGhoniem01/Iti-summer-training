@@ -1,0 +1,9 @@
+{% extends 'app1/home.html' %}  
+{% load static %}
+{% block title %} All Courses {% endblock %}
+
+{% block content%}
+
+<a href="{% url 'course.create' %}" class="btn btn-primary">Create course</a>
+
+{% endblock %}

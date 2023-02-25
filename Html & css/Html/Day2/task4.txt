@@ -1,0 +1,43 @@
+<html>
+<head><title> Task 4 </title></head>
+
+<body>
+<form method="post" action="server.html">
+
+<table border="10" width="600" height="500">
+
+<tr><th align="center" colspan="2" > Registeration </th></tr>
+
+<tr>
+<td> Full name <input type="text" placeholder="Enter your name" name="Full name"/></td>
+<td> Username <input type="text" placeholder="Enter your Username" name="Username"/></td>
+</tr>
+
+<tr>
+<td> Email <input type="email" placeholder="enter your email" name="Email"/> </td>
+<td> Phone number <input type="tel" placeholder="enter your Phone number" name="Phone Number"/> </td>
+</tr>
+
+<tr>
+<td> Password <input type="password" placeholder="enter your password" name="password"/> </td>
+<td> Confirm password <input type="password" placeholder="Confirm Password" name="confirm password"/> </td>
+</tr>
+
+<tr>
+<td colspan="2">
+<table>
+<tr>
+
+<td> Male <input type="radio" name="gender" value="Male" /> </td>
+<td> Female <input type="radio" name="gender" value="Female" /> </td>
+<td> Prefer not to say <input type="radio" name="gender" value="Prefer not to say" /> </td>
+
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

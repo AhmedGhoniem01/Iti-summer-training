@@ -1,0 +1,28 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        //--------------------------------------------------
+        // capitalize words
+        var str1 = "the quick brown fox";
+        console.log(str1);
+        list = str1.split(" ");
+        console.log(list);
+        str2="";
+        for(let i=0 ; i < list.length ; i++){
+            // temp = list[i];
+            // temp[0] = temp[0].toUpperCase();
+            // console.log(temp[0]);
+            // list[i] = temp;
+            list[i] = list[i][0].toUpperCase() + list[i].substr(1);
+        }
+        str2 = list.join(" ");
+        console.log(str2);
+    </script>
+            
+    <script src="index.js"></script>
+
+</body>
+</html>

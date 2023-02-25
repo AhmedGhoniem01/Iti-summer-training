@@ -1,0 +1,34 @@
+{% extends 'app1/home.html' %}  
+{% load static %}
+{% block content%}
+
+<div>
+
+<div class="card" style="width: 18rem; display:inline-block; margin:10px; ">
+  <img src="{% static 'products/images/'|add:product.image %}" width="250" height="250" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Title: {{product.title}} </h5>
+    <p class="card-text">Description: {{product.description}} </p>
+    <p class="card-text">Price: {{product.price}} </p>
+    <p class="card-text">Number: {{product.no_of_items}} </p>
+    <p class="card-text">Created at: {{product.created_at}} </p>
+    <p class="card-text">Updated at: {{product.updated_at}} </p>
+    <p class="card-text">Category: <a href="{{product.category.get_url}}"> {{product.category}} </a> </p>
+    
+    <a href="{% url 'products.index' %}" class="btn btn-primary">Return</a>
+
+  </div>
+</div>
+
+<div style="display:inline-block">
+<h1>See also: </h1>
+{% for p in product.category.products_categorys.all %}
+  {% if p.id != product.id %}
+    <li> <a href="{{p.get_url}}">{{ p.title }}</a> </li>
+  {% endif %}
+{% endfor %}
+</div>
+
+</div>
+
+{% endblock %}

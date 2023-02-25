@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+</head>
+
+
+<body>
+
+<table>
+
+<tr>
+<td> Send message</td>
+<td> <a href="sms: +201007905750"> </a> </td>
+</tr>
+
+<tr>
+<td> Make call </td>
+<td> <a href = "tel:+201007905750"></a> </td>
+</tr>
+
+<tr>
+<td> Open whatsapp </td>
+<td> <a href = "http://www.whatsapps.com" ></a> </td>
+</tr>
+
+</table>
+
+</body>
+</html>

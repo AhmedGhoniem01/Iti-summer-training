@@ -1,0 +1,14 @@
+{% extends 'app1/home.html' %}  
+{% load static %}
+{% block title %} All Courses {% endblock %}
+
+{% block content%}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" class="btn">Submit</input>    
+</form>
+
+<script src="{% static 'courses/js/script.js' %}"></script>
+{% endblock %}

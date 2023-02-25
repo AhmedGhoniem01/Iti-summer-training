@@ -1,0 +1,17 @@
+<html>
+<head><title> Task 3 </title></head>
+
+<body>
+
+<table border="5" width="50" heigth="100">
+
+<tr><td colspan="3" > RGB colors </td></tr>
+<tr><td rowspan="3" > Examples   </td></tr>
+<tr><td> Red </td> <td bgcolor="red"> Red </td> </tr>
+<tr><td> black </td> <td bgcolor="black"> black </td> </tr>
+
+</table>
+
+</body>
+
+</html>

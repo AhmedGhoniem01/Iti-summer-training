@@ -1,0 +1,47 @@
+CREATE TABLE tracks (
+	name varchar(20) primary key
+);
+
+CREATE TABLE students (
+	id serial primary key ,
+	email varchar(50),
+	name varchar(100),
+	address varchar(100)
+	track_name varchar(20),
+	FOREIGN KEY(track_name) REFRENCES tracks(name)
+);
+
+CREATE TABLE students_phone(
+	student_id int ,
+	phone_number bigint ,
+	PRIMARY KEY(student_id , phone_number) ,
+	FOREIGN KEY(student_id) REFRENCES students(id)
+);
+
+
+CREATE TABLE subjects (
+	name varchar(20) PRIMARY KEY ,
+	description varchar(100),
+	max_score int
+	track_name varchar(20),
+	FOREIGN KEY(track_name) REFRENCES tracks(name)
+);
+
+CREATE TABLE student_subjects (
+	student_id int,
+	subject_name varchar(20),
+	exam_date date,
+	exam_score int,
+	PRIMARY KEY (student_id , subject_id),
+	FOREIGN KEY(student_id) REFRENCES students(id),
+	FOREIGN KEY(subject_name) REFRENCES subjects(name),
+	);
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO students (email,name,address) VALUES ('ahmed@gmail.com','Ahmed','Sharqia');
+INSERT INTO students (email,name,address) VALUES ('mohamed@gmail.com','Mohamed','Sharqia');
+INSERT INTO students (email,name,address) VALUES ('ali@gmail.com','Ali','mansoura');
+INSERT INTO students (email,name,address) VALUES ('noha@gmail.com','Noha','cairo');
+INSERT INTO students (email,name,address) VALUES ('maha@gmail.com','Maha','alexandira');

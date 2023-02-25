@@ -1,0 +1,13 @@
+<html>
+<head><title> task 3 </title></head>
+
+
+<body>
+
+<h1>a simple c program: </h1> </br>
+<pre>
+    #include
+</pre>
+
+</body>
+</html>

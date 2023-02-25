@@ -1,0 +1,17 @@
+<html>
+<head><title> task 6 </title></head>
+
+<body> 
+
+<img src = "C:\Users\User\Desktop\DATA\ITI\html\D01\D01\lab 01\map1" map = "map1" />
+<map name = "map1" >
+<area shape = "rect" coords = "366,185,861,225" href = "www.instagram.com" />
+<area shape = "rect" coords = "366,341,868,427" href = "www.facebook.com" />
+<area shape = "rect" coords = "364,550,860,632" href = "www.whatsapp.com" />
+<area shape = "rect" coords = "372,760,858,845" href = "www.youtube.com" />
+<area shape = "rect" coords = "369,960,857,1052" href = "www.twitter.com" />
+</map>
+
+</body>
+
+</html>

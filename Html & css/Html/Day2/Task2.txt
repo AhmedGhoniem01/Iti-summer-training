@@ -1,0 +1,29 @@
+<html>
+
+<head><title> Task 2 </title></head>
+
+<body>
+
+<table>
+<caption> Favourites </caption>
+
+<tr>
+<td colspan = "2" ></td>
+<td></td>
+<td align = "center" > Bob </td>
+<td align = "center" > Alice </td>
+</tr>
+
+<tr>
+<td rowspan="2" > Favourite </td>
+<th> Color </th>
+<td> green </td>
+<td> magenta </td>
+<th> Flavour </th>
+<td> banana </td>
+<td> chocalate </td>
+</tr>
+</table>
+
+</body>
+</html>

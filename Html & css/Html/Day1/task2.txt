@@ -1,0 +1,28 @@
+<html>
+<head></head>
+
+<body>
+
+<h3> &lt; list &gt; </h3> </br>
+<p> the list is used to </p> </br>
+<ul>
+
+<li type = "circle" > circle (default) </li>
+<li> square </li>
+<li>moon 
+
+<ol> 
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ol>
+ 
+</li>
+
+</ul>
+<h3> the hard rule </h3>
+
+
+</body>
+
+</html>

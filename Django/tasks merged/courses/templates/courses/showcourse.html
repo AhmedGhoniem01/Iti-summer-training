@@ -1,0 +1,16 @@
+{% extends 'app1/home.html' %}  
+{% load static %}
+{% block content%}
+
+<div class="card" style="width: 18rem; display:inline-block; margin:10px; ">
+  <img src="{{ course.get_img_url }}" width="250" height="250" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Name: {{course.name}} </h5>
+    <h5 class="card-title">Max Grade: {{course.max_grade}} </h5>
+    
+    <a href="{% url 'courses.index' %}" class="btn btn-primary">Return</a>
+
+  </div>
+</div>
+
+{% endblock %}

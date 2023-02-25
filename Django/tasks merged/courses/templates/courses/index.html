@@ -1,0 +1,27 @@
+{% extends 'app1/home.html' %}  
+{% load static %}
+{% block title %} All Courses {% endblock %}
+
+{% block content%}
+
+{% for course in object_list %}
+
+<div class="card" style="width: 18rem; display:inline-block; margin:10px; ">
+  <img src="{{ course.get_img_url }}" width="250" height="250" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Name: {{course.name}} </h5>
+    <h5 class="card-title">Max Grade: {{course.max_grade}} </h5>
+    
+    <a href="{% url 'course.show' course.id %}" class="btn btn-primary">View</a>
+    <a href="{% url 'course.edit' course.id %}" class="btn btn-primary">Edit</a>
+    <a href="{% url 'course.delete' course.id %}" class="btn btn-primary">Delete</a>
+
+
+  </div>
+</div>
+
+{% endfor%}
+<a href="{% url 'course.create' %}" class="btn btn-primary">Create course</a>
+
+
+{% endblock %}
